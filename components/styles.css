@@ -168,6 +168,19 @@ z-index: var(--z-index-fixed);
 }
 
 
+/*sections*/
+
+.section {
+    height: 100vh;
+}
+
+
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
