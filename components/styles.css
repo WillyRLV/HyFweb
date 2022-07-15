@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FUENTES DE GOOGLE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+
+/*first color*/
+
+--first-color:#00BFAF;
+--sec-color:#BFAF00;
+--ter-color:#BF0070;
+/*z-index*/
+--z-index-fixed:100;
+
+/*margin*/
+--mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 3.5rem 0 0 0;
+}
+
+.body{
+    background: url(../components/img/imagen_fondo2.jpg) fixed;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*global*/
+.container{
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+/*==================*/
+
+.list ul li {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* .section{
+width: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+
+/*NAVBAR*/
+
+ .header{
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: var(--z-index-fixed);
+}
+
+
+.logo h1 {
+    color: #00BFAF;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+
+.nav__toggle{
+    display: inline-flex;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.nav__close{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*nav list*/
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+    row-gap: 3rem;
+}
+
+
+.nav__link{
+    color: #fff;
+    font-weight: 900;
+}
+
+.social{
+    margin-top: 100px;
+  margin-left: 50px;
+  
+}
+
+
+.social a{
+    color: #BFAF00;
+    align-items: center ;
+    flex-direction: row;
+    font-size: 2rem;
+    margin-right: 20px;
+    
+}
+
+
+
+
+@media screen and (max-width:767px){
+
+    .nav__menu{
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        background-color: #BF0070;
+        right: -100%;
+        padding: 4rem 0 0 3rem;
+        border-radius: 1rem 0 0 1rem;
+        transition: .3s;
+        z-index: var(--z-fixed);
+        box-shadow: -12px 0px 14px -8px rgba(0,0,0,0.71) ;
+    }
+}
+
+
+/*showw menu*/
+.show-menu {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
