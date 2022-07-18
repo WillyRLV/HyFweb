@@ -30,15 +30,13 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    margin: 3.5rem 0 0 0;
+    /* margin: 3.5rem 0 0 0; */
 }
 
-.body{
-    background: url(../components/img/imagen_fondo2.jpg) fixed;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+html {
+    scroll-behavior: smooth;
+  }
+
 
 /*global*/
 .container{
@@ -77,36 +75,39 @@ width: 100%;
 position: fixed;
 top: 0;
 left: 0;
+transition: 0.4s;
 z-index: var(--z-index-fixed);
 }
 
 
-.logo h1 {
-    color: #00BFAF;
+.logo img {
+
+    width: 70px;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 
 .nav__toggle{
     display: inline-flex;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     cursor: pointer;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
 }
 
 
 .nav__close{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 1.25rem;
     cursor: pointer;
-    color: #fff;
+    color: #708785;
 }
 
 /*nav list*/
@@ -121,7 +122,7 @@ z-index: var(--z-index-fixed);
 
 
 .nav__link{
-    color: #fff;
+    color:#708785;
     font-weight: 900;
 }
 
@@ -133,12 +134,23 @@ z-index: var(--z-index-fixed);
 
 
 .social a{
-    color: #BFAF00;
+    color: var(--ter-color);
     align-items: center ;
     flex-direction: row;
     font-size: 2rem;
     margin-right: 20px;
     
+}
+
+/*cambio de color header*/
+.scroll-header {
+   
+    background-color: #708785;
+    box-shadow:  rgb(2, 2, 2) 0px 6px 6px -4px; 
+    
+}
+.scroll-header  .nav__toggle {
+    color: #00BFAF ;
 }
 
 
@@ -151,12 +163,12 @@ z-index: var(--z-index-fixed);
         width: 80%;
         height: 100%;
         top: 0;
-        background-color: #BF0070;
+        background-color: #DFF7F5;
         right: -100%;
         padding: 4rem 0 0 3rem;
         border-radius: 1rem 0 0 1rem;
         transition: .3s;
-        z-index: var(--z-fixed);
+        z-index: var(--z-index-fixed);
         box-shadow: -12px 0px 14px -8px rgba(0,0,0,0.71) ;
     }
 }
@@ -168,18 +180,55 @@ z-index: var(--z-index-fixed);
 }
 
 
-/*sections*/
+/*container==========================*/
 
-.section {
-    height: 100vh;
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
+/*================================*/
+
+/*section==========================*/
+.section{
+    padding-top: 7rem;
+}
+/*================================*/
 
 
 .home {
+
+    position: relative;
+    background: url(img/imagen_fondo2.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+   
     display: flex;
     justify-content: center;
+    height: 100vh;
+    padding-top: 7rem;
 }
+
+.divhome{
+    color: #e9f9e9;
+}
+.services{
+height: 100vh;
+background-color: aquamarine;
+}
+
+.about{
+    height: 100vh;
+    background-color: #708785;
+    }
+
+.contact{
+        height: 200vh;
+        background-color: #BFAF00;
+        }
+
 
 
 

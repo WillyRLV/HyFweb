@@ -1,7 +1,8 @@
 /*MOSTRAR MENU*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+  navClose = document.getElementById("nav-close"),
+  sectioncl = document.getElementById("main");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -18,6 +19,15 @@ if (navClose) {
 
 
 
+if (sectioncl) {
+  
+  sectioncl.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+
+
+
   //? REMOVE MENU MOBILE
 const navLink = document.querySelectorAll(".nav__link");
 linkAction = () => {
@@ -27,3 +37,14 @@ linkAction = () => {
 };
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
+/*CHANGE BACKGOUND HEADER]============================*/
+
+function scrollHeader() {
+  const header = document.getElementById("header");
+  if (this.scrollY >= 60) header.classList.add("scroll-header");
+  else header.classList.remove("scroll-header");
+}
+
+window.addEventListener("scroll", scrollHeader);
