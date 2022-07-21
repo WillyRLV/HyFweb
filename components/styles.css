@@ -147,7 +147,7 @@ align-items: center;
 .scroll-header {
 
     background-color: #ffffff;
-    box-shadow: rgb(2, 2, 2) 0px 6px 6px -4px;
+    box-shadow: rgb(171, 171, 171) 0px 6px 6px -4px;
     transition: .5s;
     height: 12vh;
 
@@ -210,7 +210,6 @@ align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-
     display: flex;
     justify-content: center;
     height: 150vh;
@@ -231,14 +230,18 @@ align-items: center;
 
 .title {
 
-    font-size: 3.3em;
+    font-size:2.7em;
     color: #BFEFEB;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 
 .parrafo {
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: center;
+    font-weight: 400;
+    color: #ffffff;
 
 }
 
@@ -328,7 +331,7 @@ font-weight: normal;
     content: '';
     width: 30px;
     
-    border: 2px solid #BF0070;
+    border: 2px solid var(--sec-color);
 }
 
 .name-pic1::before{
@@ -342,18 +345,74 @@ font-weight: normal;
 
 
 .parr-pic1{
-    font-weight: lighter;
-    font-size: 1.56em;
+    font-weight: 400;
+    font-size: 1.1em;
     color: #ffffff;
 }
-
-
 /*==================================================*/
+
+/*SERVICIOS*/
 .services {
-    height: 100vh;
-    background-color: aquamarine;
+    height: 150vh;
 }
 
+
+.divserv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+align-items: center;
+
+}
+
+.title-serv{
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #393939;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.title-serv::before{
+    position: absolute;
+    content: '';
+   /* width: 80px;  */
+    height: 30px;
+    border: 2px solid #00BFAF;
+    top: -4px;
+    left: -8px;
+    /* top: 27px; */
+}
+
+
+/*card*/
+.title-gr{
+    /* background-color: #00BFAF; */
+}
+.content-card{
+    
+    margin-top: 40px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    margin-top: 15px;
+  border-radius: 10px;
+  border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parr-serv{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*========================================================*/
 .about {
     height: 100vh;
     background-color: #708785;
