@@ -11,7 +11,7 @@
 :root {
 
     /*first color*/
-
+    --white-color: #fff;
     --first-color: #00BFAF;
     --sec-color: #BFAF00;
     --ter-color: #BF0070;
@@ -83,7 +83,7 @@ align-items: center;
 
 .logo img {
     transition: 0.5s;
-    width: 70px;
+    width: 55px;
 }
 
 .nav {
@@ -230,7 +230,7 @@ align-items: center;
 
 .title {
 
-    font-size:2.7em;
+    font-size: 2.7em;
     color: #BFEFEB;
     text-transform: uppercase;
     font-weight: normal;
@@ -260,20 +260,31 @@ align-items: center;
     padding-top: 2px;
 }
 
+
 .btn-1 {
+    display: flex;
+    justify-content: center;
     border: 2px solid var(--sec-color);
 
 }
 
+/*botones principales*/
 .btn-1 a,
 .btn-2 a {
     color: #e9f9e9;
 }
 
+
+
 .btn-2 {
+    display: flex;
+    justify-content: center;
     transition: 0.2s ease-out;
     border: 2px solid var(--sec-color);
 }
+
+/*==========================================*/
+
 
 .btn-2:hover {
     background-color: var(--sec-color);
@@ -315,69 +326,76 @@ align-items: center;
 }
 
 
-.gr-pic-text{
-margin-top: 30px;
+.gr-pic-text {
+    margin-top: 30px;
 }
 
-.name-pic1{
+.name-pic1 {
     display: inline-block;
-position: relative;
-font-weight: normal;
+    position: relative;
+    font-weight: normal;
 }
-.name-pic1::before , .name-pic1::after{
+
+.name-pic1::before,
+.name-pic1::after {
     position: absolute;
     top: 0.6em;
     right: 3;
     content: '';
     width: 30px;
-    
+
     border: 2px solid var(--sec-color);
 }
 
-.name-pic1::before{
+.name-pic1::before {
     left: -40px;
 }
 
 
-.name-pic1::after{
+.name-pic1::after {
     right: -40px;
 }
 
 
-.parr-pic1{
+.parr-pic1 {
     font-weight: 400;
     font-size: 1.1em;
     color: #ffffff;
 }
+
 /*==================================================*/
 
 /*SERVICIOS*/
 .services {
-    height: 150vh;
+    height: auto;
+    margin-bottom: 90px;
+
 }
 
 
-.divserv{
+.divserv {
     display: flex;
     justify-content: center;
     flex-direction: column;
-align-items: center;
+    align-items: center;
 
 }
 
-.title-serv{
+.title-serv {
     position: relative;
     font-size: 1.5em;
     text-align: center;
     color: #393939;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 300;
+
+
 }
 
-.title-serv::before{
+.title-serv::before {
     position: absolute;
     content: '';
-   /* width: 80px;  */
+    /* width: 80px;  */
     height: 30px;
     border: 2px solid #00BFAF;
     top: -4px;
@@ -387,35 +405,127 @@ align-items: center;
 
 
 /*card*/
-.title-gr{
-    /* background-color: #00BFAF; */
-}
-.content-card{
-    
+/* .title-gr{
+   
+} */
+.content-card {
+display: grid;
     margin-top: 40px;
+    gap: 5px;
 }
 
-.card{
+.card {
+    position: relative;
     width: 200px;
     height: 300px;
     margin-top: 15px;
-  border-radius: 10px;
-  border: 3px solid;
+    border-radius: 10px;
+    border: 2px solid var(--first-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
+    box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
 }
 
-.parr-serv{
+.card::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    border: 5px solid var(--sec-color);
+    top: -5px;
+
+
+}
+
+
+/*estilo boton secundario*/
+
+.btn-card {
+    border: 2px solid var(--sec-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-card:hover {
+    background-color: var(--sec-color);
+}
+
+
+.btn-card:hover a {
+    color: var(--white-color);
+}
+
+.size2 {
+    width: 85px;
+    height: 23px;
+    padding-top: 2px;
+    text-align: center;
+
+}
+
+.btn-card a {
+    color: #727272;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+/*============================================*/
+
+
+.text-gp {
+    text-align: left;
     padding-right: 30px;
     padding-left: 30px;
+
 }
 
+.title-card {
+    margin-bottom: 6px;
+    font-size: 1.1em;
+    color: #004842;
+    font-weight: 400;
+}
+
+.parr-serv {
+    font-size: .9em;
+    color: #5e716f;
+}
+
+
 /*========================================================*/
+
+
+/*ABOUT SECTION===========================================*/
 .about {
-    height: 100vh;
-    background-color: #708785;
+    height: 200vh;
+  
+  
+}
+
+.div-about{
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 20px;
+    text-align: center;
+}
+
+.title-about {
+    position: relative;
+}
+
+.title-about h1:before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    top: 0;
+    right: 110px;
+    border:2px solid var(--sec-color);
 }
 
 .contact {
