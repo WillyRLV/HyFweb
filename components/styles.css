@@ -8,6 +8,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+
+
 :root {
 
     /*first color*/
@@ -15,6 +18,9 @@
     --first-color: #00BFAF;
     --sec-color: #BFAF00;
     --ter-color: #BF0070;
+    --cua-color:#d9d9d9;
+    --qui-color:#5271ff;
+    --sex-color:#00c2cb;
     /*z-index*/
     --z-index-fixed: 100;
 
@@ -409,7 +415,7 @@ align-items: center;
    
 } */
 .content-card {
-display: grid;
+    display: grid;
     margin-top: 40px;
     gap: 5px;
 }
@@ -426,9 +432,9 @@ display: grid;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 7px 25px -14px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
 }
 
 .card::before {
@@ -503,20 +509,20 @@ display: grid;
 /*ABOUT SECTION===========================================*/
 .about {
     height: 200vh;
-  
-  
+
+
 }
 
-.div-about{
+.div-about {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
- 
+
     gap: 30px;
     text-align: center;
 }
 
-.title-about h1{
+.title-about h1 {
     font-size: 2em;
     position: relative;
     font-weight: 300;
@@ -524,44 +530,45 @@ display: grid;
     display: inline-block;
 }
 
-.title-about h1:before{
+.title-about h1:before {
     position: absolute;
     content: '';
     height: 35px;
     top: 0;
     left: -9px;
-    border:2px solid var(--sec-color);
+    border: 2px solid var(--sec-color);
 }
 
 
 /*CARRUSEL*/
-.main-slider{
+.main-slider {
 
     position: relative;
 
 }
 
 
-.container-slider{
-   width:80%;
-   margin: auto;
+.container-slider {
+    width: 80%;
+    margin: auto;
 
-overflow: hidden;
+    overflow: hidden;
 }
 
-.slider{
- 
-   display: flex;
+.slider {
+
+    display: flex;
     width: 400%;
     margin-left: -100%;
-   
+
 }
-.slider__section{
+
+.slider__section {
     width: 100%;
 
 }
 
-.slider__img{
+.slider__img {
     display: block;
     width: 100%;
     height: 100%;
@@ -569,69 +576,166 @@ overflow: hidden;
 
 }
 
-.slider__btn{
- position: absolute;
+.slider__btn {
+    position: absolute;
     width: 40px;
     height: 40px;
     top: 50%;
-   transform: translateY(-50%);
-    font-size: 2.4em;
+    transform: translateY(-50%);
+    font-size: 2em;
     color: #BF0070;
     cursor: pointer;
     transition: .3s;
     font-weight: bold;
     font-family: monospace;
-    background: #fff;
+
     border-radius: 50%;
     align-items: center;
-   
-}
-
-.slider__btn:hover{
-
-    font-size: 3em;
-}
-
-.slider__btn--left{
-
-left: 0px;
-}
-
-.slider__btn--right{
-right: 0;
+    justify-content: center;
 
 }
 
+.slider__btn:hover {
 
-/*mision*/
+    font-size: 2.3em;
+}
+
+.slider__btn--left {
+
+    left: 0px;
+}
+
+.slider__btn--right {
+    right: 0;
+
+}
+
+
+/*mision/vision section*/
+
+
+.mis_vis-sec {
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 0px;
+    grid-template-areas:
+        "mision"
+        "vision";
+
+}
+
+
+
+
+
+
 .mision{
+    grid-area: mision;
+    position: relative;
+}
+
+.vision{
+    grid-area: vision;
+    position: relative;
+ 
+
+}
+
+.mision-pic {
+    
+    background-image: url(./img/pexels-marc-mueller-380769.jpg);
+    background-size: cover;
+    background-position: center;
     height: 50vh;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    filter:brightness(45%);
+}
+
+.parr-mision {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #a5f0db;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.parr-vision {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #a5f0db;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-align: right;
+}
+
+
+
+
+
+
+
+.vision-pic{
+    background-image: url(./img/pexels-cowomen-2041627.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    filter:brightness(45%);
   
 }
 
-.title-mision{
-    font-weight: 400;
-    position: relative;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    
+
+.title-sec-mision,.title-sec-vision{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 60px;
+    gap: 30px;
+    width: 100%;
+    top: 0%;
 }
 
-.title-mision::before{
-    
+/*contenidooooo*/
+.title-mision,
+.title-vision {
+    color: rgb(245, 245, 245);
+    padding-top: 30px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    filter: blur(0);
+
+}
+
+.title-mision::before {
+
     position: absolute;
     content: '';
     width: 30px;
-    border: 2px solid var(--first-color);
+    border: 2px solid var(--sec-color);
     bottom: -5px;
+    left: 0;
+}
+
+.title-vision::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    border: 2px solid var(--sec-color);
+    bottom: -5px;
+    right: 0;
+
 }
 
 
 
-
-
-
-/*========================================================*/
+/*===========================CONTACT=============================*/
 
 .contact {
     height: 200vh;
