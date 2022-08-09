@@ -21,6 +21,20 @@
     --cua-color:#d9d9d9;
     --qui-color:#5271ff;
     --sex-color:#00c2cb;
+    --sep-color:#050a30;
+    --oct-color:#5f7061;
+    --nov-color:#006b62;
+    --dec-color:#027b71;
+    --onc-color:#11998e;
+    --doc-color:#12afa3;
+    --trec-color:#2bccca;
+    --cat-color:#365b6d;
+    --quin-color:#56b48c;
+    --die6-color:#A8e1ee;
+    --die7-color:#A9e3d7;
+    --die8-color:#D9f8ff;
+    --die9-color:#Eef8eb;
+
     /*z-index*/
     --z-index-fixed: 100;
 
@@ -508,7 +522,9 @@ align-items: center;
 
 /*ABOUT SECTION===========================================*/
 .about {
-    height: 200vh;
+    height: auto;
+    margin-bottom: 30px;
+  
 
 
 }
@@ -616,13 +632,17 @@ align-items: center;
 
 .mis_vis-sec {
     display: grid;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px 0px;
     grid-template-areas:
         "mision"
         "vision";
+        width: 300px;
+      align-self: center;
+    
 
 }
 
@@ -634,11 +654,17 @@ align-items: center;
 .mision{
     grid-area: mision;
     position: relative;
+ width: 270px;
+ margin: auto;
+
+
 }
 
 .vision{
     grid-area: vision;
     position: relative;
+    width: 270px;
+    margin: auto;
  
 
 }
@@ -652,12 +678,13 @@ align-items: center;
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     filter:brightness(45%);
+    
 }
 
 .parr-mision {
     padding-left: 30px;
     padding-right: 30px;
-    color: #a5f0db;
+    color: var(--cua-color);
     font-size: 1.4em;
     font-weight: lighter;
     text-align: left;
@@ -666,7 +693,7 @@ align-items: center;
 .parr-vision {
     padding-left: 30px;
     padding-right: 30px;
-    color: #a5f0db;
+    color: var(--cua-color);
     font-size: 1.4em;
     font-weight: lighter;
     text-align: right;
@@ -730,9 +757,114 @@ align-items: center;
     border: 2px solid var(--sec-color);
     bottom: -5px;
     right: 0;
-
 }
 
+
+/*staff*/
+
+.staff{
+    height: auto;
+}
+
+
+.title-staff h1 {
+    font-size: 2em;
+    position: relative;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.title-staff h1:before {
+    position: absolute;
+    content: '';
+    height: 33px;
+    top: 0;
+    right: -9px;
+    border: 2px solid var(--sec-color);
+}
+
+
+/*CARDS*/
+
+.box{
+    padding-top: 30px;
+    width: 230px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: auto;
+
+   
+  }
+  .card-s{
+    position: relative;
+    width: 230px;
+    height: 300px;
+    background:var(--die8-color);
+
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+
+  .card-s:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card-s:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card-s .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .card-s:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .card-s .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .card-s .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .card-s .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: #777;
+   text-transform: uppercase;
+  } 
+
+  .card-s .details h2 span{
+  font-weight: 500;
+  font-size: 16px;
+  color: #f38695;
+  display: block;
+  margin-top: 5px;
+   } 
 
 
 /*===========================CONTACT=============================*/
