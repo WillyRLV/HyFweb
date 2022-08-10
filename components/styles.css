@@ -385,11 +385,10 @@ align-items: center;
 
 /*==================================================*/
 
-/*SERVICIOS*/
+/*====================SERVICIOS============================*/
 .services {
     height: auto;
-    margin-bottom: 90px;
-
+    background-color: red;
 }
 
 
@@ -523,7 +522,9 @@ align-items: center;
 /*ABOUT SECTION===========================================*/
 .about {
     height: auto;
-    margin-bottom: 30px;
+    
+    background-color: #050a30;
+  
   
 
 
@@ -764,6 +765,7 @@ align-items: center;
 
 .staff{
     height: auto;
+    padding-bottom: 30px;
 }
 
 
