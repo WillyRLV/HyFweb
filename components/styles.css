@@ -523,7 +523,7 @@ align-items: center;
 .about {
     height: auto;
     
-    background-color: #050a30;
+   
   
   
 
@@ -761,7 +761,7 @@ align-items: center;
 }
 
 
-/*staff*/
+/*=====================staff=================*/
 
 .staff{
     height: auto;
@@ -796,8 +796,6 @@ align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 15px;
     margin: auto;
-
-   
   }
   .card-s{
     position: relative;
@@ -867,6 +865,67 @@ align-items: center;
   display: block;
   margin-top: 5px;
    } 
+
+/*==============clients====================*/
+
+.clients{
+
+    
+
+    height: 300px;
+}
+
+
+.title-clients h1 {
+    padding-bottom: 50px;
+    ;
+    font-size: 1.3em;
+    position: relative;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.title-clients h1:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    top: 0;
+    right: -9px;
+    border: 2px solid var(--sec-color);
+}
+
+
+
+.custom-slider div img{
+
+    margin: auto;
+   }
+
+  
+   
+
+   
+   .custom-slider div img {
+     filter:  grayscale(100%);
+     transition: .3s ease-in-out
+    
+     
+   }
+   
+   .custom-slider div img:hover {
+     filter:  grayscale(0);
+    
+     
+   }
+
+
+  
+    
+
+
+   
+
 
 
 /*===========================CONTACT=============================*/

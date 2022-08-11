@@ -10,6 +10,10 @@
     <!--REMIX INCON-->
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 </head>
 
@@ -233,6 +237,24 @@
 
             </div>
 
+
+            <!---Nuestros clientes-->
+
+            <div class="clients">
+                <div class="title-clients">
+                    <h1>NUESTROS CLIENTES</h1>
+                </div>
+                <div  class="custom-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                    <div class="div1"><img src="components/img/clients/plaza vea.png" width="200" alt=""></div>
+                    <div><img src="components/img/clients/metro.png" width="200" alt=""></div>
+                    <div><img src="components/img/clients/mass.png" width="200" alt=""></div>
+                    <div><img src="components/img/clients/oslo.png" width="200" alt=""></div>
+                    <div><img src="components/img/clients/Vivanda.png" width="200" alt=""></div>
+                    <div><img src="components/img/clients/Makro_logo_la.svg.png" width="180" alt=""></div>
+                  </div>
+                
+            </div>
+
         </div>
 
 
@@ -247,6 +269,44 @@
     <script src="components/main.js"></script>
     <script src="components/slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+   
+    $('.custom-slider').slick({
+     dots:true,
+     autoplay: true,
+   autoplaySpeed: 1000,
+   centerMode: true,
+   centerPadding: '60px',
+   slidesToShow: 3,
+   responsive: [
+     {
+       breakpoint: 768,
+       settings: {
+         arrows: false,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 2
+       }
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         arrows: false,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 1
+       }
+     }
+   ]
+ });
+     
+   </script>
+
 
 
 </body>
