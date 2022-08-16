@@ -266,7 +266,7 @@
         <div class="content-contact">
 
             <div class="title-contact">
-                <h1>hola1</h1>
+                <h1>CONTACTANOS</h1>
             </div>
             <p class="parr-contact">
 
@@ -276,6 +276,7 @@
 
             <form action="https://formspree.io/f/xyyvynnv"
             method="POST" class="form">
+            <div class="inputs">
                 <div class="div-in">
                     <input type="text" id="name"  name="name" class="form__input" autocomplete="off" placeholder=" " required>
                     <label for="name" class="form__label">Name</label>
@@ -293,7 +294,11 @@
                     <input type="text" id="subject"  name="subject" class="form__input" autocomplete="off" placeholder=" " required>
                     <label for="subject" class="form__label">Asunto</label>
                 </div>
-
+                <div class="div-text-area">
+                    <textarea class="text-area" name="message" id="message" cols="30" rows="10" placeholder=" " required></textarea> 
+                    <label for="message" class="area__label" >Mensaje</label>
+                </div>
+            </div>
 
                 <div class="button">
                     <button type="submit">
@@ -309,6 +314,10 @@
         </div>
 
     </section>
+
+    <footer>
+        
+    </footer>
 
 
     <script src="components/main.js"></script>

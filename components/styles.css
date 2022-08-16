@@ -926,12 +926,8 @@ align-items: center;
 /*===========================CONTACT=============================*/
 
 .contact {
-    height: 100vh;
-    background-color: #027b71;
-
-
-
-
+    height: auto;
+    min-height: 95vh;
 }
 
 .content-contact {
@@ -976,11 +972,16 @@ align-items: center;
 
 
 .form {
-
-    background-color: #060b23;
+    position: relative;
+ 
     padding-top: 30px;
+    min-height: 540px;
+    height : auto;
+    background-color: var(--first-color);
+    border-radius: 6px;
 
 }
+
 
 .div-in {
   
@@ -1004,18 +1005,19 @@ align-items: center;
     border-radius: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    color: white;
+    color: var(--white-color);
     outline: none;
     padding: 1.25rem;
     background: none;
+    transition: .3s;
 }
 
 .form__input:hover {
-    border-color: #adffff;
+    border-color: var(--dec-color);
 }
 
 .form__input:focus {
-    border-color: #18ffff;
+    border-color: var(--cat-color);
 }
 
 .form__label {
@@ -1023,21 +1025,98 @@ align-items: center;
     left: 1rem;
     top: 0.8rem;
     padding: 0 0.5rem;
-    color: white;
+    color: var(--white-color);
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background-color: #060b23;
+    background-color:var(--first-color);
 }
 
-/* 
-1. When the input is in the focus state
-reduce the size of the label and move upwards 
-
-2. Keep label state when content is in input field 
-*/
 .form__input:focus~.form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
     top: -0.5rem;
     font-size: 0.8rem;
     left: 0.8rem;
+}
+
+
+/*text area style*/
+ .div-text-area{
+    position: relative;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+} 
+.text-area{
+    position: absolute;
+    resize: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #e1e5ee;
+    outline: none;
+    background: none;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    padding: 1.25rem;
+    transition: 0.3s;
+
+}
+
+
+.text-area:hover {
+    border-color: var(--dec-color);
+}
+
+.text-area:focus {
+    border-color: var(--cat-color);
+}
+
+.area__label {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: var(--white-color);
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    background-color:var(--first-color);
+}
+
+.text-area:focus~.area__label,
+.text-area:not(:placeholder-shown).text-area:not(:focus)~.area__label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+
+/*==================================================================*/
+
+.button{
+    display: flex;
+    margin-top: 20px;
+ 
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button button{
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 3px;
+   /* border: 2px solid var(--die7-color); */
+border: none;
+    background:var(--white-color);
+    color: #027b71;
+    transition: .2s;
+    
+}
+
+.button button:active{
+    box-shadow: 3px 2px 25px 1px rgba(0,0,0,0.25);
+    background-color:  #393939;
 }
