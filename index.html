@@ -116,9 +116,6 @@
                     </div>
                 </div>
 
-
-
-
             </div>
         </div>
     </section>
@@ -276,23 +273,35 @@
                 Para mayor informacion y de talle no dude en escrbirnos ,de esta manera estaremos gustosos en ayudarle.
             </p>
 
-            <div class="div-form">
-                <form action="" class="form">
-                  <div class="div-in" >
-                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Email</label>
-                </div>
-                <div>
-                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Email</label>
-                </div>
-                
 
+            <form action="https://formspree.io/f/xyyvynnv"
+            method="POST" class="form">
+                <div class="div-in">
+                    <input type="text" id="name"  name="name" class="form__input" autocomplete="off" placeholder=" " required>
+                    <label for="name" class="form__label">Name</label>
+                </div>
+
+                <div class="div-in">
+                    <input type="email" id="email" name="email" class="form__input" autocomplete="off" placeholder=" " required>
+                    <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="div-in">
+                    <input type="tel" id="phone" name="phone" class="form__input" autocomplete="off" placeholder=" " required>
+                    <label for="phone" class="form__label">Teléfono</label>
+                </div>
+                <div class="div-in">
+                    <input type="text" id="subject"  name="subject" class="form__input" autocomplete="off" placeholder=" " required>
+                    <label for="subject" class="form__label">Asunto</label>
+                </div>
+
+
+                <div class="button">
                     <button type="submit">
                         Enviar
                     </button>
-                </form>
-            </div>
+                </div>
+            </form>
+
 
             <div></div>
 
