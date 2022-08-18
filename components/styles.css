@@ -37,6 +37,11 @@
 
     /*z-index*/
     --z-index-fixed: 100;
+    --z-index-1:1;
+    --z-index--1:-1;
+    --z-index-0:0;
+
+
 
     /*margin*/
     --mb-0-5: 0.5rem;
@@ -101,10 +106,21 @@ align-items: center;
     z-index: var(--z-index-fixed);
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .logo img {
     transition: 0.5s;
     width: 55px;
+}
+
+.logo h1{
+    font-size: 0.8em;
+    color: var(--white-color);
 }
 
 .nav {
@@ -245,24 +261,60 @@ align-items: center;
     color: #e9f9e9;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     flex-direction: column;
+   
 }
 
 
+.custom-title-slider{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    background-color: #050a30;
+   
+    margin: auto;
+    
+
+   
+}
+
+.custom--title-sider{
+    text-align: center;
+    margin: auto;
+
+}
+
 .title {
 
-    font-size: 2.7em;
+    font-size: 2.1em;
     color: #BFEFEB;
     text-transform: uppercase;
     font-weight: normal;
 }
 
+.hyf{
+    font-size: 1.35em;
+    font-weight: 800;
+}
+
+.co-cre{
+    font-weight: bold;
+    
+}
+.exp{
+    color: var(--white-color);
+   
+}
 
 .parrafo {
-    font-size: 1.1em;
-    text-align: center;
-    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 600;
     color: #ffffff;
 
 }
@@ -287,6 +339,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     border: 2px solid var(--sec-color);
+    background-color: var(--sec-color);
 
 }
 
@@ -437,8 +490,8 @@ align-items: center;
 
 .card {
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     margin-top: 15px;
     border-radius: 10px;
     border: 2px solid var(--first-color);
@@ -450,6 +503,10 @@ align-items: center;
     box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+}
+
+.card img{
+    padding-top: 10px;
 }
 
 .card::before {
@@ -630,10 +687,157 @@ align-items: center;
 }
 
 
-/*mision/vision section*/
+/*mision/vision section==================================*/
 
 
-.mis_vis-sec {
+.mis_vis-sec{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 100vh;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    
+}
+
+
+.mision{
+    height: 40vh;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.mision-pic{
+   position: absolute;
+   background-image: url(img/pexels-marc-mueller-380769.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    transition: .3s;
+}
+
+.mision:hover .mision-pic{
+    transform: scale(1.2);
+    filter: brightness(40%) blur(2px);
+}
+
+.title-sec-mision{
+    position: relative;
+  margin-top: 60px;
+  height: 100px;
+ 
+}
+
+.title-mision{
+position: relative;
+color: var(--white-color);
+margin: auto;
+width: 105px;
+}
+
+.parr-mision{
+    color: var(--white-color);
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 35px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+
+.title-mision h1::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    border: 2px solid var(--sec-color);
+    bottom: -3px;
+    left: 0;
+    
+
+}
+
+
+.vision{
+    position: relative;
+    width: 250px;
+    height: 40vh;
+    background-color: #050a30;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.vision-pic{
+    position: absolute;
+     background-image: url(img/pexels-marc-mueller-380769.jpg) ;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     filter: brightness(40%);
+     transition: .3s;
+
+ }
+
+
+ .vision:hover .vision-pic{
+    transform: scale(1.2);
+    filter: brightness(40%) blur(2px);
+}
+
+.title-sec-vision{
+    position: relative;
+  margin-top: 60px;
+  height: 100px;
+ 
+}
+
+.title-vision{
+position: relative;
+color: var(--white-color);
+margin: auto;
+width: 82px;
+}
+
+.parr-vision{
+    color: var(--white-color);
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 35px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+
+.title-vision h1::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    border: 2px solid var(--sec-color);
+    bottom: -3px;
+    right: 0;
+
+}
+ 
+
+
+
+
+
+/* .mis_vis-sec {
     display: grid;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -648,11 +852,6 @@ align-items: center;
 
 
 }
-
-
-
-
-
 
 .mision {
     grid-area: mision;
@@ -684,6 +883,18 @@ align-items: center;
 
 }
 
+
+.vision-pic {
+    background-image: url(./img/pexels-cowomen-2041627.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(45%);
+
+}
+
 .parr-mision {
     padding-left: 30px;
     padding-right: 30px;
@@ -700,7 +911,10 @@ align-items: center;
     font-size: 1.4em;
     font-weight: lighter;
     text-align: right;
-}
+} */
+
+
+/*=====================================================*/
 
 
 
@@ -708,19 +922,7 @@ align-items: center;
 
 
 
-.vision-pic {
-    background-image: url(./img/pexels-cowomen-2041627.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    border-radius: 8px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    filter: brightness(45%);
-
-}
-
-
-.title-sec-mision,
+/* .title-sec-mision,
 .title-sec-vision {
     display: flex;
     flex-direction: column;
@@ -729,10 +931,10 @@ align-items: center;
     gap: 30px;
     width: 100%;
     top: 0%;
-}
+} */
 
 /*contenidooooo*/
-.title-mision,
+/* .title-mision,
 .title-vision {
     color: rgb(245, 245, 245);
     padding-top: 30px;
@@ -761,7 +963,7 @@ align-items: center;
     border: 2px solid var(--sec-color);
     bottom: -5px;
     right: 0;
-}
+} */
 
 
 /*=====================staff=================*/
