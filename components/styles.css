@@ -15,6 +15,7 @@
 
     /*first color*/
     --white-color: #fff;
+    --black-color: #000;
     --first-color: #00BFAF;
     --sec-color: #BFAF00;
     --ter-color: #BF0070;
@@ -37,9 +38,9 @@
 
     /*z-index*/
     --z-index-fixed: 100;
-    --z-index-1:1;
-    --z-index--1:-1;
-    --z-index-0:0;
+    --z-index-1: 1;
+    --z-index--1: -1;
+    --z-index-0: 0;
 
 
 
@@ -50,6 +51,12 @@
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
+
+    /*boder radius*/
+
+    --br-3: 3px;
+    --br-5: 5px;
+    --br-8: 8px;
 
 }
 
@@ -106,7 +113,7 @@ align-items: center;
     z-index: var(--z-index-fixed);
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,9 +125,13 @@ align-items: center;
     width: 55px;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 0.8em;
     color: var(--white-color);
+}
+
+.ans {
+    font-size: .7em;
 }
 
 .nav {
@@ -184,7 +195,7 @@ align-items: center;
 .scroll-header {
 
     background-color: #ffffff;
-    box-shadow: rgb(171, 171, 171) 0px 6px 6px -4px;
+    box-shadow: rgb(52, 51, 51) 0px 6px 6px -4px;
     transition: .5s;
     height: 12vh;
 
@@ -203,6 +214,9 @@ align-items: center;
     width: 50px;
 }
 
+.scroll-header .logo h1 {
+    color: var(--oct-color);
+}
 
 
 
@@ -250,7 +264,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     min-height: 130vh;
- 
+
 
 }
 
@@ -261,60 +275,64 @@ align-items: center;
     color: #e9f9e9;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     flex-direction: column;
-   
+
+}
+
+
+
+.custom-title-slider {
+    max-width: 300px;
+
+    /* background-color: red; */
+
+}
+
+.item1 {
+    /* background-color: #006b62; */
+}
+
+.item2 {
+    /* background-color: #ba17bd; */
+}
+
+.item3 {
+    /* background-color: #bcbe31; */
 }
 
 
-.custom-title-slider{
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.item{
-    background-color: #050a30;
-   
-    margin: auto;
-    
-
-   
-}
-
-.custom--title-sider{
-    text-align: center;
-    margin: auto;
-
-}
 
 .title {
 
-    font-size: 2.1em;
+    font-size: 1.7em;
     color: #BFEFEB;
     text-transform: uppercase;
     font-weight: normal;
 }
 
-.hyf{
+.hyf {
     font-size: 1.35em;
     font-weight: 800;
 }
 
-.co-cre{
+.co-cre {
     font-weight: bold;
-    
+
 }
-.exp{
+
+.exp {
+    font-weight: lighter;
     color: var(--white-color);
-   
+
 }
 
 .parrafo {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: left;
-    font-weight: 600;
+    font-weight: 300;
     color: #ffffff;
 
 }
@@ -323,15 +341,19 @@ align-items: center;
     display: flex;
     gap: 2em;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 .size {
-    width: 150px;
-    height: 30px;
+    font-size: .8em;
+    width: 120px;
+    height: 25px;
     padding-top: 2px;
+
 }
 
 
@@ -340,6 +362,7 @@ align-items: center;
     justify-content: center;
     border: 2px solid var(--sec-color);
     background-color: var(--sec-color);
+    border-radius: var(--br-3);
 
 }
 
@@ -356,6 +379,7 @@ align-items: center;
     justify-content: center;
     transition: 0.2s ease-out;
     border: 2px solid var(--sec-color);
+    border-radius: var(--br-3);
 }
 
 /*==========================================*/
@@ -489,9 +513,10 @@ align-items: center;
 }
 
 .card {
+
     position: relative;
     width: 250px;
-    height: 350px;
+    height: 300px;
     margin-top: 15px;
     border-radius: 10px;
     border: 2px solid var(--first-color);
@@ -499,14 +524,17 @@ align-items: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
 }
 
-.card img{
-    padding-top: 10px;
+.card img {
+    width: 80px;
+    filter: invert(56%) sepia(27%) saturate(5985%) hue-rotate(139deg) brightness(99%) contrast(101%);
+    ;
+
 }
 
 .card::before {
@@ -527,6 +555,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    border-radius: var(--br-3);
 }
 
 .btn-card:hover {
@@ -564,9 +593,11 @@ align-items: center;
 
 .title-card {
     margin-bottom: 6px;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: bold;
     color: #004842;
     font-weight: 400;
+    text-align: center;
 }
 
 .parr-serv {
@@ -581,12 +612,7 @@ align-items: center;
 /*ABOUT SECTION===========================================*/
 .about {
     height: auto;
-
-
-
-
-
-
+    min-height: 200vh;
 }
 
 .div-about {
@@ -690,22 +716,20 @@ align-items: center;
 /*mision/vision section==================================*/
 
 
-.mis_vis-sec{
+.mis_vis-sec {
     position: relative;
     margin: auto;
-    width: 300px;
+
     height: 100vh;
     gap: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-
-    
 }
 
 
-.mision{
+.mision {
     height: 40vh;
     width: 250px;
     position: relative;
@@ -714,9 +738,9 @@ align-items: center;
 
 }
 
-.mision-pic{
-   position: absolute;
-   background-image: url(img/pexels-marc-mueller-380769.jpg) ;
+.mision-pic {
+    position: absolute;
+    background-image: url(img/pexels-marc-mueller-380769.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -726,26 +750,26 @@ align-items: center;
     transition: .3s;
 }
 
-.mision:hover .mision-pic{
+.mision:hover .mision-pic {
     transform: scale(1.2);
     filter: brightness(40%) blur(2px);
 }
 
-.title-sec-mision{
+.title-sec-mision {
     position: relative;
-  margin-top: 60px;
-  height: 100px;
- 
+    margin-top: 60px;
+    height: 100px;
+
 }
 
-.title-mision{
-position: relative;
-color: var(--white-color);
-margin: auto;
-width: 105px;
+.title-mision {
+    position: relative;
+    color: var(--white-color);
+    margin: auto;
+    width: 105px;
 }
 
-.parr-mision{
+.parr-mision {
     color: var(--white-color);
     padding-left: 30px;
     padding-right: 20px;
@@ -756,19 +780,19 @@ width: 105px;
 }
 
 
-.title-mision h1::before{
+.title-mision h1::before {
     position: absolute;
     content: '';
     width: 30px;
     border: 2px solid var(--sec-color);
     bottom: -3px;
     left: 0;
-    
+
 
 }
 
 
-.vision{
+.vision {
     position: relative;
     width: 250px;
     height: 40vh;
@@ -778,40 +802,40 @@ width: 105px;
 }
 
 
-.vision-pic{
+.vision-pic {
     position: absolute;
-     background-image: url(img/pexels-marc-mueller-380769.jpg) ;
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     width: 100%;
-     height: 100%;
-     filter: brightness(40%);
-     transition: .3s;
+    background-image: url(img/pexels-marc-mueller-380769.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    transition: .3s;
 
- }
+}
 
 
- .vision:hover .vision-pic{
+.vision:hover .vision-pic {
     transform: scale(1.2);
     filter: brightness(40%) blur(2px);
 }
 
-.title-sec-vision{
+.title-sec-vision {
     position: relative;
-  margin-top: 60px;
-  height: 100px;
- 
+    margin-top: 60px;
+    height: 100px;
+
 }
 
-.title-vision{
-position: relative;
-color: var(--white-color);
-margin: auto;
-width: 82px;
+.title-vision {
+    position: relative;
+    color: var(--white-color);
+    margin: auto;
+    width: 82px;
 }
 
-.parr-vision{
+.parr-vision {
     color: var(--white-color);
     padding-left: 30px;
     padding-right: 20px;
@@ -822,7 +846,7 @@ width: 82px;
 }
 
 
-.title-vision h1::before{
+.title-vision h1::before {
     position: absolute;
     content: '';
     width: 30px;
@@ -831,139 +855,6 @@ width: 82px;
     right: 0;
 
 }
- 
-
-
-
-
-
-/* .mis_vis-sec {
-    display: grid;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 40px 0px;
-    grid-template-areas:
-        "mision"
-        "vision";
-    width: 300px;
-    align-self: center;
-
-
-}
-
-.mision {
-    grid-area: mision;
-    position: relative;
-    width: 270px;
-    margin: auto;
-
-
-}
-
-.vision {
-    grid-area: vision;
-    position: relative;
-    width: 270px;
-    margin: auto;
-
-
-}
-
-.mision-pic {
-
-    background-image: url(./img/pexels-marc-mueller-380769.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    border-radius: 8px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    filter: brightness(45%);
-
-}
-
-
-.vision-pic {
-    background-image: url(./img/pexels-cowomen-2041627.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    border-radius: 8px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    filter: brightness(45%);
-
-}
-
-.parr-mision {
-    padding-left: 30px;
-    padding-right: 30px;
-    color: var(--cua-color);
-    font-size: 1.4em;
-    font-weight: lighter;
-    text-align: left;
-}
-
-.parr-vision {
-    padding-left: 30px;
-    padding-right: 30px;
-    color: var(--cua-color);
-    font-size: 1.4em;
-    font-weight: lighter;
-    text-align: right;
-} */
-
-
-/*=====================================================*/
-
-
-
-
-
-
-
-/* .title-sec-mision,
-.title-sec-vision {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding-top: 60px;
-    gap: 30px;
-    width: 100%;
-    top: 0%;
-} */
-
-/*contenidooooo*/
-/* .title-mision,
-.title-vision {
-    color: rgb(245, 245, 245);
-    padding-top: 30px;
-    font-weight: bold;
-    display: inline-block;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    filter: blur(0);
-
-}
-
-.title-mision::before {
-
-    position: absolute;
-    content: '';
-    width: 30px;
-    border: 2px solid var(--sec-color);
-    bottom: -5px;
-    left: 0;
-}
-
-.title-vision::before {
-    position: absolute;
-    content: '';
-    width: 30px;
-    border: 2px solid var(--sec-color);
-    bottom: -5px;
-    right: 0;
-} */
 
 
 /*=====================staff=================*/
@@ -1004,11 +895,11 @@ width: 82px;
 }
 
 .card-s {
+
     position: relative;
     width: 230px;
     height: 300px;
-    background: var(--die8-color);
-
+    
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 }
@@ -1079,7 +970,7 @@ width: 82px;
 
 
 
-    height: 300px;
+    height: 250px;
 }
 
 
@@ -1134,7 +1025,7 @@ width: 82px;
 }
 
 .content-contact {
-   padding-top: 30px;
+    padding-top: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1164,7 +1055,7 @@ width: 82px;
     border: 2px solid var(--sec-color);
 }
 
-.parr-contact{
+.parr-contact {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
@@ -1176,10 +1067,10 @@ width: 82px;
 
 .form {
     position: relative;
- 
+
     padding-top: 30px;
     min-height: 540px;
-    height : auto;
+    height: auto;
     background-color: var(--first-color);
     border-radius: 6px;
 
@@ -1187,12 +1078,12 @@ width: 82px;
 
 
 .div-in {
-  
+
     position: relative;
     margin: auto;
     width: 250px;
     height: 60px;
-    
+
 
 
 
@@ -1231,7 +1122,7 @@ width: 82px;
     color: var(--white-color);
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background-color:var(--first-color);
+    background-color: var(--first-color);
 }
 
 .form__input:focus~.form__label,
@@ -1243,13 +1134,14 @@ width: 82px;
 
 
 /*text area style*/
- .div-text-area{
+.div-text-area {
     position: relative;
     margin: auto;
     width: 250px;
     height: 200px;
-} 
-.text-area{
+}
+
+.text-area {
     position: absolute;
     resize: none;
     top: 0;
@@ -1282,7 +1174,7 @@ width: 82px;
     color: var(--white-color);
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background-color:var(--first-color);
+    background-color: var(--first-color);
 }
 
 .text-area:focus~.area__label,
@@ -1295,33 +1187,33 @@ width: 82px;
 
 /*==================================================================*/
 
-.button{
+.button {
     display: flex;
     margin-top: 20px;
- 
+
     height: 30px;
     justify-content: center;
     align-items: center;
 
 }
 
-.button button{
+.button button {
     width: 150px;
     height: 40px;
     font-weight: bold;
     font-size: 1.1em;
     border-radius: 3px;
-   /* border: 2px solid var(--die7-color); */
-border: none;
-    background:var(--white-color);
+    /* border: 2px solid var(--die7-color); */
+    border: none;
+    background: var(--white-color);
     color: #027b71;
     transition: .2s;
-    
+
 }
 
-.button button:active{
-    box-shadow: 3px 2px 25px 1px rgba(0,0,0,0.25);
-    background-color:  #393939;
+.button button:active {
+    box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
+    background-color: #393939;
 }
 
 
@@ -1335,7 +1227,7 @@ border: none;
     bottom: 0;
 }
 
-.logo-footer{
+.logo-footer {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
@@ -1343,7 +1235,8 @@ border: none;
     align-items: center;
     gap: 5px;
 }
-.logo-footer h1{
+
+.logo-footer h1 {
     font-size: 1em;
     text-align: center;
     color: white;
@@ -1351,14 +1244,14 @@ border: none;
 
 }
 
-.logo-footer hr{
+.logo-footer hr {
     position: absolute;
     bottom: 38px;
-   
+
 }
 
 
-.content-footer h2{
+.content-footer h2 {
     position: absolute;
     font-size: 0.5em;
     bottom: 20px;
