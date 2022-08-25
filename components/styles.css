@@ -490,7 +490,7 @@ align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
 }
 
   .box-img img {
@@ -1442,10 +1442,25 @@ align-items: center;
     color: var(--white-color);
   }
   
-  .progress-bar {
-    height: 1rem;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
+  .out{
+    fill: #576a6b;
+    width: 150px;
+    /* background-color: rebeccapurple; */
+height: 130px;
+transition: .3s;
+
+
+
+  }
+
+#cohete{
+    animation: updown 1s linear infinite alternate;
+  }
+
+
+  @keyframes updown {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-3px);}
+
+    
   }
