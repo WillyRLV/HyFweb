@@ -1309,5 +1309,8 @@ align-items: center;
     .body{
         display: none;
     }
+    .div-op{
+        display: block;
+    }
     
 }
