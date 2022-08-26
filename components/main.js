@@ -73,8 +73,8 @@ const goToTop = () => {
 };
 
 document.addEventListener("scroll", () => {
-  console.log("Scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
+  // console.log("Scroll Height: ", scrollContainer().scrollHeight);
+  // console.log("Client Height: ", scrollContainer().clientHeight);
 
   const scrolledPercentage =
     (scrollContainer().scrollTop /
