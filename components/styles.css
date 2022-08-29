@@ -266,14 +266,13 @@ align-items: center;
 .home {
     position: relative;
     background: url(img/img2.jpg);
-    /* background-color: #00BFAF; */
-    background-size: cover;
+    width: 100%;
+background-size: cover;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh !important;
+    min-height: 120vh ;
    
 }
 
@@ -497,8 +496,12 @@ align-items: center;
 
 /*===================SKILLS==========================*/
 .skills {
+    
     text-align: center;
     min-height: 70vh;
+    
+    
+    
 }
 
 .question-skill {
@@ -695,6 +698,7 @@ align-items: center;
 /*ABOUT SECTION===========================================*/
 .about {
     min-height: 330vh;
+    
 }
 
 .div-about {
@@ -711,6 +715,9 @@ align-items: center;
     position: relative;
     font-weight: 300;
     text-transform: uppercase;
+    background-color: red;
+    width: 160px;
+    margin: auto;
 
 }
 
@@ -719,7 +726,7 @@ align-items: center;
     content: '';
     height: 25px;
     top: 0;
-    left: 50px;
+    left: 90px;
     border: 2px solid var(--sec-color);
 }
 
@@ -730,7 +737,7 @@ align-items: center;
 .mis_vis-sec {
     position: relative;
     margin: auto;
-    height: 100vh;
+    min-height: 110vh;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -740,7 +747,7 @@ align-items: center;
 
 
 .mision {
-    height: 40vh;
+    height: 300px;
     width: 250px;
     position: relative;
     overflow: hidden;
@@ -755,7 +762,7 @@ align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 250px;
-    height: 40vh;
+    height: 100%;
     filter: brightness(40%);
     transition: .3s;
 }
@@ -805,7 +812,7 @@ align-items: center;
 .vision {
     position: relative;
     width: 250px;
-    height: 40vh;
+    min-height: 300px;
     background-color: #050a30;
     overflow: hidden;
     border-radius: 5px;
@@ -819,7 +826,7 @@ align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 250px;
-    height: 40vh;
+    height: 100%;
     filter: brightness(40%);
     transition: .3s;
 
@@ -871,7 +878,6 @@ align-items: center;
 
 .staff {
     height: 2000px;
-   
 }
 
 
@@ -968,7 +974,7 @@ align-items: center;
 
 .clients {
     position: relative;
-    height: 250px;
+    height: 170px;
 }
 
 .title-clients h1 {
@@ -1204,8 +1210,8 @@ align-items: center;
 
 .footer {
 
-    width: 100%;
-    height: 180px;
+  width: 100%;
+    height:530px;
     background-color: var(--cat-color);
     bottom: 0;
 }
@@ -1215,6 +1221,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:  center;
     gap: 10px;
 
 }
@@ -1237,9 +1244,7 @@ align-items: center;
 }
 
 .content-footer h2 {
-    position: absolute;
     font-size: 0.5em;
-    bottom: 20px;
     color: white;
     font-weight: 100;
 
@@ -1250,6 +1255,25 @@ align-items: center;
     align-items: center;
     font-size: 1.5rem;
     margin-right: 10px;
+}
+
+.g-map{
+    margin-top: 20px;
+
+}
+
+.g-map h1{
+    color: var(--die6-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.g-map iframe {
+    box-shadow: 0px -1px 9px 3px rgba(105,105,105,0.75);
+    -webkit-box-shadow: 0px -1px 9px 3px rgba(105,105,105,0.75);
+    -moz-box-shadow: 0px -1px 9px 3px rgba(105,105,105,0.75);
+    border-radius: 5px
 }
 
 /*SCROLL UP*/
