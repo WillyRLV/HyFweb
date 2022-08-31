@@ -715,8 +715,7 @@ background-size: cover;
     position: relative;
     font-weight: 300;
     text-transform: uppercase;
-    background-color: red;
-    width: 160px;
+    width: 170px;
     margin: auto;
 
 }
@@ -726,7 +725,7 @@ background-size: cover;
     content: '';
     height: 25px;
     top: 0;
-    left: 90px;
+    left: 0;
     border: 2px solid var(--sec-color);
 }
 
