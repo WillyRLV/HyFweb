@@ -17,497 +17,550 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
-<div class="div_full" ><h1>No disponible para este dispositivo por el momento</h1></div>
-<body class="bodys">
-<div class="div-mobile">
-    <header class="header " id="header">
-        <nav class="nav container">
-            <div class="logo">
-                <img src="components/img/logo.svg.png">
-                <h1 logo-title>H<span class="ans">&</span>F</br>Consulting</h1>
+<div class="div_full">
+    <h1>No disponible para este dispositivo por el momento</h1>
+</div>
+
+<body class="bodys" id="bodys">
+    <div class="div-mobile" id="mobile-d">
+        <header class="header " id="header">
+            <nav class="nav container">
+                <div class="logo">
+                    <img src="components/img/logo.svg.png">
+                    <h1 logo-title>H<span class="ans">&</span>F</br>Consulting</h1>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#main">Inicio</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#services">Servicios</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">Nosotros</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="__blank" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="__blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="__blank" class="home__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <!--SECTION HOME-->
+        <section class="home " id="main">
+
+            <div class="divhome container">
+
+                <div class="custom-title-slider">
+                    <div class="item1">
+
+                        <h1 class="title"><span class="co-cre">co-creamos</span> <span class="exp">Experiencias</span>
+                            con
+                            datos</h1>
+                    </div>
+                    <div class="item2">
+                        <h1 class="title"><span class="co-cre">Llevamos</span> <span class="exp">Tecnología</span> a tu
+                            compañía</h1>
+
+                    </div>
+                    <div class="item3">
+                        <h1 class="title"><span class="co-cre">Diseñamos</span> <span class="exp">Soluciones</span>
+                            </br>
+                            out of the box</h1>
+                    </div>
+
+                </div>
+
+                <p class="parrafo">Vive la experiencia H&F</p>
+                <div class="gr-btn">
+                    <div class="btn-1 size"><a href="#contact">Contacto</a>
+                    </div>
+                    <div class="btn-2 size"><a href="#">Más</a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <a href="#skills">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <span class="text">
+                            <h1>Explora</h1>
+                        </span>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="skills section " id="skills">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00BFAF" fill-opacity="1" d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,144C672,117,768,75,864,53.3C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
+
+            <h1 class="question-skill">¿Buscabas esto?</h1>
+            <div class="div-skills">
+                <div class="box-img">
+
+                    <!-- <img src="components/img/icons2/Imagen1.png"  alt="" width="150"> -->
+                    <svg class="out" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -6 40 40">
+                        <path
+                            d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092zm-.773 13.911c1.806-3.239 3.061-4.904 4.773-6.398l-.224-.513c-2.076 1.292-3.193 2.266-4.885 4.185-.899-.641-1.407-.936-2.207-1.323l-.684.632c1.368 1.269 2.112 2.105 3.227 3.417z" />
+                    </svg>
+
+
+                    <p>Cloud Solutions</p>
+                </div>
+                <div class="box-img">
+                    <svg class="out" xmlns="http://www.w3.org/2000/svg" viewBox="-10.5 -10 45 45">
+                        <path
+                            d="M11 6v8h7v-2h-5v-6h-2zm-8.4 9.397l-1.799.906c-.302-.784-.521-1.607-.652-2.46l1.998-.159c.1.59.253 1.162.453 1.713zm4.393 7.501l.669-1.899c-.549-.265-1.068-.577-1.555-.933l-1.413 1.443c.708.545 1.478 1.012 2.299 1.389zm-5.319-4.795c.44.741.956 1.43 1.539 2.058l1.404-1.433c-.431-.471-.814-.982-1.149-1.528l-1.794.903zm10.322-18.103c-2.79 0-5.349.964-7.385 2.562l-2.183-2.183-1.356 7.013 7.015-1.354-2.05-2.049c1.666-1.245 3.724-1.989 5.959-1.989 5.516 0 10.003 4.486 10.003 10s-4.487 10-10.003 10c-.848 0-1.668-.118-2.455-.317l-.665 1.894c.996.267 2.039.423 3.12.423 6.629 0 12.004-5.373 12.004-12s-5.375-12-12.004-12zm-11.996 11.849l2.015-.161c.027-.703.125-1.386.288-2.047h-2.076c-.142.714-.217 1.453-.227 2.208z" />
+                    </svg>
+
+                    <p>Real Time Solutions</p>
+                </div>
+                <div class="box-img">
+                    <!-- <img src="components/img/icons2/Imagen3.png" alt="" width="150"> -->
+                    <svg class="out" viewBox="-8 3 40 20" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M12 17.925l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm-7.807 0l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm15.614 0l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm-8.307 3.52l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm-7.807 0l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm15.614 0l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm1.693-4.445h-17.997l-.003-1.162c-.009-2.446.372-3.273 2.938-3.858 2.661-.601 3.739-.995 3.126-2.123-1.718-3.16-2.043-5.94-.916-7.828.769-1.29 2.175-2.029 3.852-2.029 1.666 0 3.06.729 3.828 1.999 1.126 1.865.811 4.654-.89 7.854-.632 1.194.621 1.56 3.159 2.135 2.512.573 2.913 1.406 2.903 3.868v1.144zm-16.996-1h15.992c.013-1.965.071-2.536-2.121-3.037-1.783-.404-3.465-.786-3.974-1.89-.229-.499-.178-1.067.151-1.688 1.529-2.878 1.854-5.317.917-6.87-.59-.977-1.645-1.515-2.969-1.515-1.334 0-2.397.547-2.99 1.541-.94 1.572-.607 4.001.936 6.84.336.619.392 1.187.165 1.687-.505 1.108-2.257 1.505-3.952 1.888-2.171.495-2.167.949-2.155 3.044z" />
+                    </svg>
+                    <p>Custom Work</p>
+                </div>
+                <div class="box-img">
+                    <!-- <img src="components/img/icons2/Imagen4.png" alt="" width="150"> -->
+                    <svg class="out" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 30 ">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Capa_1" data-name="Capa 1">
+                            <path class="cls-1"
+                                d="M29.7,21.45l3.7,2-2.26,2h0l2.25,3.09-2.25,1.22v3.1L24.4,36.46l-6.75-3.61V29.76L15.4,28.53l2.24-3.07-2.24-2,3.75-2a7.32,7.32,0,0,0-.25,1.27l-1.77,1,1.19,1,.62-.35a4.86,4.86,0,0,0,.28,1l-.82.45,6,3.13,6-3.12-.81-.45a4.4,4.4,0,0,0,.31-.95l.53.29,1.23-1.09L30,22.72A7.29,7.29,0,0,0,29.7,21.45Zm-4.8,8.21v5.4l5.25-2.81V30.3l-3.5,1.91Zm-6.25.64v1.95l5.25,2.8V29.67l-1.75,2.54Zm-1.77-2.1,5,2.7,1.1-1.6-5-2.58Zm9,1.11L27,30.9l5-2.71-1.07-1.47Z"
+                                transform="translate(-15.4 -13.15)" />
+                        </g>
+                        <g id="cohete">
+                            <polygon class="cls-1" points="9.38 15.16 8.76 15.16 8.76 12.44 9.38 12.44 9.38 15.16" />
+                            <polygon class="cls-1" points="8.22 13.74 7.6 13.74 7.61 12 8.23 12 8.22 13.74" />
+                            <polygon class="cls-1" points="10.58 13.72 9.96 13.72 9.95 12 10.57 12 10.58 13.72" />
+                            <path class="cls-1"
+                                d="M22.89,24.41l-.32-.74c-.73.27-2.15,2.29-2.15,2.29a4.68,4.68,0,0,1,1.24-5.66,7.58,7.58,0,0,1,2.82-7.11l0,0,0,0a7.57,7.57,0,0,1,2.81,7.11A4.68,4.68,0,0,1,28.62,26s-1.43-2-2.16-2.29l-.31.74H22.89Zm1.63-9.92a6.78,6.78,0,0,0-1.86,6.22A4.22,4.22,0,0,0,21,23.8,3.73,3.73,0,0,1,23,22.44s.43.79.51,1h1.94c.08-.19.5-1,.5-1a3.7,3.7,0,0,1,2.09,1.36,4.13,4.13,0,0,0-1.69-3.07,6.92,6.92,0,0,0-1.86-6.23Z"
+                                transform="translate(-15.4 -13.15)" />
+                            <path class="cls-1" d="M24.47,20.18a.52.52,0,1,1,.52-.51A.51.51,0,0,1,24.47,20.18Z"
+                                transform="translate(-15.4 -13.15)" />
+                            <path class="cls-1" d="M24.47,18.34a1,1,0,1,1,1-1A1,1,0,0,1,24.47,18.34Z"
+                                transform="translate(-15.4 -13.15)" />
+                            <path class="cls-1"
+                                d="M24.47,16.9a.39.39,0,0,1,.39.39.38.38,0,0,1-.39.39.39.39,0,0,1-.39-.39A.4.4,0,0,1,24.47,16.9Z"
+                                transform="translate(-15.4 -13.15)" />
+                        </g>
+                    </svg>
+                    <p>Out of the Box</p>
+                </div>
+
+
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#00BFAF" fill-opacity="1"
+                    d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,144C672,117,768,75,864,53.3C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+
+        <!-- SECTION SERVICIOS-->
+        <section class="services section" id="services">
+            <div class="container divserv">
+                <div class="title-gr">
+                    <h1 class="title-serv">NUESTROS SERVICIOS</h1>
+                </div>
+
+                <div class="content-card">
+                    <div class="card">
+                        <img src="components/img/icons/contact-form-email-svgrepo-com.svg" alt="">
+
+
+                        <div class="text-gp">
+
+                            <h1 class="title-card">Encuestas customizadas</h1>
+
+                            <p class="parr-serv">Perzonalizadas según tus necesidades</p>
+
+                            <div class="btn-card size2"><a href="#">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="components/img/icons/timer-svgrepo-com.svg" alt="" width="100">
+
+                        <div class="text-gp">
+
+                            <h1 class="title-card">Indicadores en tiempo real</h1>
+
+                            <p class="parr-serv">Análisis para la optimización del rendimiento</p>
+
+                            <div class="btn-card size2"><a href="">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="components/img/icons/analytics-svgrepo-com.svg" alt="" width="100">
+
+
+                        <div class="text-gp">
+
+                            <h1 class="title-card">Analítica avanzada</h1>
+
+                            <p class="parr-serv">Modelos,métodos y técnicas para tú compañía</p>
+
+                            <div class="btn-card size2"><a href="#">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffd700" fill-opacity="2.99" d="M0,32L1440,160L1440,320L0,320Z"></path>
+            </svg>
+        </section>
+
+
+        <!--section about-->
+        <section class="about  section  " id="about">
+
+            <div class="div-about container">
+                <div class="title-about">
+                    <h1>Nosotros</h1>
+                </div>
+                <div class="parr-about">
+                    <p>Somos la primera compañía peruana en implementar Business Intelligence en áreas de Experience
+                        Management.</p>
+                </div>
+                <!--mision/vision-->
+
+                <div class="mis_vis-sec">
+                    <div class="mision">
+                        <div class="mision-pic">
+                            <!-- <img src="components/img/pexels-cowomen-2041627.jpg" alt=""> -->
+                        </div>
+                        <div class="title-sec-mision">
+                            <div class="title-mision">
+                                <h1>Propósito</h1>
+                            </div>
+
+                            <div class="parr-mision">
+                                <p>
+                                    Impulsar estrategias a través de datos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vision">
+
+                        <div class="vision-pic">
+                        </div>
+                        <div class="title-sec-vision">
+                            <div class="title-vision">
+                                <h1>Valores</h1>
+                            </div>
+
+                            <div class="parr-vision">
+                                <p>
+                                    Transparencia</br>
+                                    Excelencia</br>
+                                    Compromiso</br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--STAFF-->
+
+                <div class="staff">
+                    <div class="title-staff">
+                        <h1>Equipo</h1>
+                    </div>
+
+                    <div class="box">
+
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/Raul.jpg" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>RAUL RIVERO<br><span>CEO H&F</span></h2>
+                            </div>
+                        </div>
+
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/FOTO PAGINA WEB2.png" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>ALLISON SANCHEZ<br><span>Customer Management</span></h2>
+                            </div>
+                        </div>
+
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/WhatsApp Image 2022-08-22 at 3.24.10 PM.jpeg" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>DIEGO LOPEZ<br><span>SALES MANGEMENT</span></h2>
+                            </div>
+                        </div>
+
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/jp.jpg" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>JEAN BENITES<br><span>BUSINESS INTELLIGENCE</span></h2>
+                            </div>
+                        </div>
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/will.jpg" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>WILLIAM LUIS<br><span>DEVELOPMENT</span></h2>
+                            </div>
+                        </div>
+
+                        <div class="card-s">
+                            <div class="imgBx">
+                                <img src="components/img/ragnar.jpg" alt="images">
+                            </div>
+                            <div class="details">
+                                <h2>RAGNAR RIVERO<br><span>SECURITY</span></h2>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!---Nuestros clientes-->
+
+                <div class="clients" id="clientes">
+                    <div class="title-clients">
+                        <h1>NUESTROS CLIENTES</h1>
+                    </div>
+                    <div class="custom-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                        <div class="div1"><img src="components/img/clients/plaza vea.png" width="200" alt=""></div>
+                        <div><img src="components/img/clients/metro.png" width="200" alt=""></div>
+                        <div><img src="components/img/clients/mass.png" width="200" alt=""></div>
+                        <div><img src="components/img/clients/oslo.png" width="200" alt=""></div>
+                        <div><img src="components/img/clients/Vivanda.png" width="200" alt=""></div>
+                        <div><img src="components/img/clients/Makro_logo_la.svg.png" width="180" alt=""></div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#main">Inicio</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#services">Servicios</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">Nosotros</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
-                </ul>
-                <div class="social">
+
+        </section>
+
+        <!--CONTACTOOO-->
+        <section class="contact section  container " id="contact">
+            <div class="content-contact">
+
+                <div class="title-contact">
+                    <h1>CONTÁCTANOS</h1>
+                </div>
+                <p class="parr-contact">
+
+                    Nos encantaría brindarte y detallarte nuestros servicios, contacta con nosotros y un ejecutivo te
+                    atenderá a la brevedad.
+                </p>
+
+
+                <form action="https://formspree.io/f/xyyvynnv" method="POST" class="form">
+                    <div class="inputs">
+                        <div class="div-in">
+                            <input type="text" id="name" name="name" class="form__input" autocomplete="off"
+                                placeholder=" " required>
+                            <label for="name" class="form__label">Nombre</label>
+                        </div>
+
+                        <div class="div-in">
+                            <input type="email" id="email" name="email" class="form__input" autocomplete="off"
+                                placeholder=" " required>
+                            <label for="email" class="form__label">Correo</label>
+                        </div>
+                        <div class="div-in">
+                            <input type="tel" id="phone" name="phone" class="form__input" autocomplete="off"
+                                placeholder=" " required>
+                            <label for="phone" class="form__label">Teléfono</label>
+                        </div>
+                        <div class="div-in">
+                            <input type="text" id="subject" name="subject" class="form__input" autocomplete="off"
+                                placeholder=" " required>
+                            <label for="subject" class="form__label">Asunto</label>
+                        </div>
+                        <div class="div-text-area">
+                            <textarea class="text-area" name="message" id="message" cols="30" rows="10" placeholder=" "
+                                required></textarea>
+                            <label for="message" class="area__label">Mensaje</label>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+
+
+                <div></div>
+
+
+            </div>
+
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="content-footer">
+                <div class="g-map">
+                    <h1> Ubícanos</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d670.5101225698492!2d-77.02772447162721!3d-11.896673811713875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d08e0b5527e7%3A0x1c3238d4adc0a7fc!2sJiron%20Puno%20241%2C%20Carabayllo%2015321!5e0!3m2!1ses!2spe!4v1661792881930!5m2!1ses!2spe"
+                        width="330" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="logo-footer">
+                    <img src="components/img/logo-white.png" width="50">
+                    <h1>
+                        H<span class="ans">&</span>F
+                    </h1>
+                </div>
+                <div class="social-re">
                     <a href="https://www.facebook.com" target="__blank" class="home__social-link">
                         <i class="ri-facebook-fill"></i>
                     </a>
                     <a href="https://www.instagram.com" target="__blank" class="home__social-link">
                         <i class="ri-instagram-line"></i>
                     </a>
-                    <a href="https://www.instagram.com" target="__blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
+                    <a href="https://www.twitter.com" target="__blank" class="home__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="__blank" class="home__social-link">
+                        <i class="ri-linkedin-fill"></i>
                     </a>
                 </div>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-
-
-    </header>
-
-    <!--SECTION HOME-->
-    <section class="home " id="main">
-
-        <div class="divhome container">
-
-            <div class="custom-title-slider">
-                <div class="item1">
-
-                    <h1 class="title"><span class="co-cre">co-creamos</span> <span class="exp">Experiencias</span> con
-                        datos</h1>
-                </div>
-                <div class="item2">
-                    <h1 class="title"><span class="co-cre">Llevamos</span> <span class="exp">Tecnología</span> a tu
-                        compañía</h1>
-
-                </div>
-                <div class="item3">
-                    <h1 class="title"><span class="co-cre">Diseñamos</span> <span class="exp">Soluciones</span> </br>
-                        out of the box</h1>
-                </div>
-
-            </div>
-
-            <p class="parrafo">Vive la experiencia H&F</p>
-            <div class="gr-btn">
-                <div class="btn-1 size"><a href="#contact">Contacto</a>
-                </div>
-                <div class="btn-2 size"><a href="#">Más</a>
-                </div>
-            </div>
-
-            <div class="arrow">
-                <a href="#skills">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <span class="text">
-                        <h1>Explora</h1>
-                    </span>
-                </a>
-            </div>
-
-
-
-        </div>
-    </section>
-
-    <section class="skills section " id="skills">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00BFAF" fill-opacity="1" d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,144C672,117,768,75,864,53.3C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
-        
-        <h1 class="question-skill">¿Buscabas esto?</h1>
-        <div class="div-skills">
-            <div class="box-img">
-
-                <!-- <img src="components/img/icons2/Imagen1.png"  alt="" width="150"> -->
-                <svg class="out" xmlns="http://www.w3.org/2000/svg"  viewBox="-8 -6 40 40"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092zm-.773 13.911c1.806-3.239 3.061-4.904 4.773-6.398l-.224-.513c-2.076 1.292-3.193 2.266-4.885 4.185-.899-.641-1.407-.936-2.207-1.323l-.684.632c1.368 1.269 2.112 2.105 3.227 3.417z"/></svg>
-
-
-                <p>Cloud Solutions</p>
-            </div>
-            <div class="box-img">
-                <svg  class="out" xmlns="http://www.w3.org/2000/svg"  viewBox="-10.5 -10 45 45"><path d="M11 6v8h7v-2h-5v-6h-2zm-8.4 9.397l-1.799.906c-.302-.784-.521-1.607-.652-2.46l1.998-.159c.1.59.253 1.162.453 1.713zm4.393 7.501l.669-1.899c-.549-.265-1.068-.577-1.555-.933l-1.413 1.443c.708.545 1.478 1.012 2.299 1.389zm-5.319-4.795c.44.741.956 1.43 1.539 2.058l1.404-1.433c-.431-.471-.814-.982-1.149-1.528l-1.794.903zm10.322-18.103c-2.79 0-5.349.964-7.385 2.562l-2.183-2.183-1.356 7.013 7.015-1.354-2.05-2.049c1.666-1.245 3.724-1.989 5.959-1.989 5.516 0 10.003 4.486 10.003 10s-4.487 10-10.003 10c-.848 0-1.668-.118-2.455-.317l-.665 1.894c.996.267 2.039.423 3.12.423 6.629 0 12.004-5.373 12.004-12s-5.375-12-12.004-12zm-11.996 11.849l2.015-.161c.027-.703.125-1.386.288-2.047h-2.076c-.142.714-.217 1.453-.227 2.208z"/></svg>
-                
-                <p>Real Time Solutions</p>
-            </div>
-            <div class="box-img"> 
-                <!-- <img src="components/img/icons2/Imagen3.png" alt="" width="150"> -->
-                <svg class="out" viewBox="-8 3 40 20" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 17.925l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm-7.807 0l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm15.614 0l-.976 2.014-2.217.305 1.615 1.552-.395 2.204 1.973-1.057 1.973 1.056-.393-2.203 1.613-1.552-2.217-.305-.976-2.014zm-8.307 3.52l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm-7.807 0l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm15.614 0l-.512-.491.702-.097.31-.639.31.639.703.097-.511.491.125.699-.627-.335-.625.334.125-.698zm1.693-4.445h-17.997l-.003-1.162c-.009-2.446.372-3.273 2.938-3.858 2.661-.601 3.739-.995 3.126-2.123-1.718-3.16-2.043-5.94-.916-7.828.769-1.29 2.175-2.029 3.852-2.029 1.666 0 3.06.729 3.828 1.999 1.126 1.865.811 4.654-.89 7.854-.632 1.194.621 1.56 3.159 2.135 2.512.573 2.913 1.406 2.903 3.868v1.144zm-16.996-1h15.992c.013-1.965.071-2.536-2.121-3.037-1.783-.404-3.465-.786-3.974-1.89-.229-.499-.178-1.067.151-1.688 1.529-2.878 1.854-5.317.917-6.87-.59-.977-1.645-1.515-2.969-1.515-1.334 0-2.397.547-2.99 1.541-.94 1.572-.607 4.001.936 6.84.336.619.392 1.187.165 1.687-.505 1.108-2.257 1.505-3.952 1.888-2.171.495-2.167.949-2.155 3.044z"/></svg>
-                <p>Custom Work</p>
-            </div>
-            <div class="box-img">
-                <!-- <img src="components/img/icons2/Imagen4.png" alt="" width="150"> -->
-                <svg class="out" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 30 "><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M29.7,21.45l3.7,2-2.26,2h0l2.25,3.09-2.25,1.22v3.1L24.4,36.46l-6.75-3.61V29.76L15.4,28.53l2.24-3.07-2.24-2,3.75-2a7.32,7.32,0,0,0-.25,1.27l-1.77,1,1.19,1,.62-.35a4.86,4.86,0,0,0,.28,1l-.82.45,6,3.13,6-3.12-.81-.45a4.4,4.4,0,0,0,.31-.95l.53.29,1.23-1.09L30,22.72A7.29,7.29,0,0,0,29.7,21.45Zm-4.8,8.21v5.4l5.25-2.81V30.3l-3.5,1.91Zm-6.25.64v1.95l5.25,2.8V29.67l-1.75,2.54Zm-1.77-2.1,5,2.7,1.1-1.6-5-2.58Zm9,1.11L27,30.9l5-2.71-1.07-1.47Z" transform="translate(-15.4 -13.15)"/></g><g id="cohete"><polygon class="cls-1" points="9.38 15.16 8.76 15.16 8.76 12.44 9.38 12.44 9.38 15.16"/><polygon class="cls-1" points="8.22 13.74 7.6 13.74 7.61 12 8.23 12 8.22 13.74"/><polygon class="cls-1" points="10.58 13.72 9.96 13.72 9.95 12 10.57 12 10.58 13.72"/><path class="cls-1" d="M22.89,24.41l-.32-.74c-.73.27-2.15,2.29-2.15,2.29a4.68,4.68,0,0,1,1.24-5.66,7.58,7.58,0,0,1,2.82-7.11l0,0,0,0a7.57,7.57,0,0,1,2.81,7.11A4.68,4.68,0,0,1,28.62,26s-1.43-2-2.16-2.29l-.31.74H22.89Zm1.63-9.92a6.78,6.78,0,0,0-1.86,6.22A4.22,4.22,0,0,0,21,23.8,3.73,3.73,0,0,1,23,22.44s.43.79.51,1h1.94c.08-.19.5-1,.5-1a3.7,3.7,0,0,1,2.09,1.36,4.13,4.13,0,0,0-1.69-3.07,6.92,6.92,0,0,0-1.86-6.23Z" transform="translate(-15.4 -13.15)"/><path class="cls-1" d="M24.47,20.18a.52.52,0,1,1,.52-.51A.51.51,0,0,1,24.47,20.18Z" transform="translate(-15.4 -13.15)"/><path class="cls-1" d="M24.47,18.34a1,1,0,1,1,1-1A1,1,0,0,1,24.47,18.34Z" transform="translate(-15.4 -13.15)"/><path class="cls-1" d="M24.47,16.9a.39.39,0,0,1,.39.39.38.38,0,0,1-.39.39.39.39,0,0,1-.39-.39A.4.4,0,0,1,24.47,16.9Z" transform="translate(-15.4 -13.15)"/></g></svg>
-                <p>Out of the Box</p>
-            </div>
-
-
-
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00BFAF" fill-opacity="1" d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,144C672,117,768,75,864,53.3C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </section>
-
-
-    <!-- SECTION SERVICIOS-->
-    <section class="services section" id="services">
-        <div class="container divserv">
-            <div class="title-gr">
-                <h1 class="title-serv">NUESTROS SERVICIOS</h1>
-            </div>
-
-            <div class="content-card">
-                <div class="card">
-                    <img src="components/img/icons/contact-form-email-svgrepo-com.svg" alt="">
-
-
-                    <div class="text-gp">
-
-                        <h1 class="title-card">Encuestas customizadas</h1>
-
-                        <p class="parr-serv">Perzonalizadas según tus necesidades</p>
-
-                        <div class="btn-card size2"><a href="#">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="components/img/icons/timer-svgrepo-com.svg" alt="" width="100">
-
-                    <div class="text-gp">
-
-                        <h1 class="title-card">Indicadores en tiempo real</h1>
-
-                        <p class="parr-serv">Análisis para la optimización del rendimiento</p>
-
-                        <div class="btn-card size2"><a href="">Saber más</a>
-                        </div>
-                    </div>
+                <hr width="100%">
+                <div>
+                    <h2>© 2022 HyF consulting | Todos los derechos reservados</h2>
                 </div>
 
 
-                <div class="card">
-                    <img src="components/img/icons/analytics-svgrepo-com.svg" alt="" width="100">
-
-
-                    <div class="text-gp">
-
-                        <h1 class="title-card">Analítica avanzada</h1>
-
-                        <p class="parr-serv">Modelos,métodos y técnicas para tú compañía</p>
-
-                        <div class="btn-card size2"><a href="#">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="2.99" d="M0,32L1440,160L1440,320L0,320Z"></path></svg>
-    </section>
-
-
-    <!--section about-->
-    <section class="about  section  " id="about">
-
-        <div class="div-about container">
-            <div class="title-about">
-                <h1>Nosotros</h1>
-            </div>
-            <div class="parr-about">
-                <p>Somos la primera compañía peruana en implementar Business Intelligence en áreas de Experience
-                    Management.</p>
-            </div>
-            <!--mision/vision-->
-
-            <div class="mis_vis-sec">
-                <div class="mision">
-                    <div class="mision-pic">
-                        <!-- <img src="components/img/pexels-cowomen-2041627.jpg" alt=""> -->
-                    </div>
-                    <div class="title-sec-mision">
-                        <div class="title-mision">
-                            <h1>Propósito</h1>
-                        </div>
-
-                        <div class="parr-mision">
-                            <p>
-                                Impulsar estrategias a través de datos
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vision">
-
-                    <div class="vision-pic">
-                    </div>
-                    <div class="title-sec-vision">
-                        <div class="title-vision">
-                            <h1>Valores</h1>
-                        </div>
-
-                        <div class="parr-vision">
-                            <p>
-                                Transparencia</br>
-                                Excelencia</br>
-                                Compromiso</br>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--STAFF-->
-
-            <div class="staff">
-                <div class="title-staff">
-                    <h1>Equipo</h1>
-                </div>
-
-                <div class="box">
-
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/Raul.jpg" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>RAUL RIVERO<br><span>CEO H&F</span></h2>
-                        </div>
-                    </div>
-
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/FOTO PAGINA WEB2.png" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>ALLISON SANCHEZ<br><span>Customer Management</span></h2>
-                        </div>
-                    </div>
-
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/WhatsApp Image 2022-08-22 at 3.24.10 PM.jpeg" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>DIEGO LOPEZ<br><span>SALES MANGEMENT</span></h2>
-                        </div>
-                    </div>
-
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/jp.jpg" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>JEAN BENITES<br><span>BUSINESS INTELLIGENCE</span></h2>
-                        </div>
-                    </div>
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/will.jpg" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>WILLIAM LUIS<br><span>DEVELOPMENT</span></h2>
-                        </div>
-                    </div>
-
-                    <div class="card-s">
-                        <div class="imgBx">
-                            <img src="components/img/ragnar.jpg" alt="images">
-                        </div>
-                        <div class="details">
-                            <h2>RAGNAR RIVERO<br><span>SECURITY</span></h2>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
             </div>
 
 
-            <!---Nuestros clientes-->
+        </footer>
 
-            <div class="clients">
-                <div class="title-clients">
-                    <h1>NUESTROS CLIENTES</h1>
-                </div>
-                <div class="custom-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                    <div class="div1"><img src="components/img/clients/plaza vea.png" width="200" alt=""></div>
-                    <div><img src="components/img/clients/metro.png" width="200" alt=""></div>
-                    <div><img src="components/img/clients/mass.png" width="200" alt=""></div>
-                    <div><img src="components/img/clients/oslo.png" width="200" alt=""></div>
-                    <div><img src="components/img/clients/Vivanda.png" width="200" alt=""></div>
-                    <div><img src="components/img/clients/Makro_logo_la.svg.png" width="180" alt=""></div>
-                </div>
+        <!---BOTONES WSSP AY SCROLL UP-->
 
-            </div>
-
+        <div class="progress-bar">
+            <button class="back-to-top hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                </svg>
+            </button>
         </div>
 
 
-    </section>
 
-<!--CONTACTOOO-->
-    <section class="contact section  container " id="contact">
-        <div class="content-contact">
-
-            <div class="title-contact">
-                <h1>CONTÁCTANOS</h1>
-            </div>
-            <p class="parr-contact">
-
-                Nos encantaría brindarte y detallarte nuestros servicios, contacta con nosotros y un ejecutivo te
-                atenderá a la brevedad.
-            </p>
+        <script src="components/main.js"></script>
+        <script src="components/slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
-            <form action="https://formspree.io/f/xyyvynnv" method="POST" class="form">
-                <div class="inputs">
-                    <div class="div-in">
-                        <input type="text" id="name" name="name" class="form__input" autocomplete="off" placeholder=" "
-                            required>
-                        <label for="name" class="form__label">Nombre</label>
-                    </div>
+        <script>
 
-                    <div class="div-in">
-                        <input type="email" id="email" name="email" class="form__input" autocomplete="off"
-                            placeholder=" " required>
-                        <label for="email" class="form__label">Correo</label>
-                    </div>
-                    <div class="div-in">
-                        <input type="tel" id="phone" name="phone" class="form__input" autocomplete="off" placeholder=" "
-                            required>
-                        <label for="phone" class="form__label">Teléfono</label>
-                    </div>
-                    <div class="div-in">
-                        <input type="text" id="subject" name="subject" class="form__input" autocomplete="off"
-                            placeholder=" " required>
-                        <label for="subject" class="form__label">Asunto</label>
-                    </div>
-                    <div class="div-text-area">
-                        <textarea class="text-area" name="message" id="message" cols="30" rows="10" placeholder=" "
-                            required></textarea>
-                        <label for="message" class="area__label">Mensaje</label>
-                    </div>
-                </div>
-
-                <div class="button">
-                    <button type="submit">
-                        Enviar
-                    </button>
-                </div>
-            </form>
-
-
-            <div></div>
-
-
-        </div>
-
-    </section>
-
-    <footer class="footer">
-        <div class="content-footer">
-            <div class="g-map">
-                <h1> Ubícanos</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d670.5101225698492!2d-77.02772447162721!3d-11.896673811713875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d08e0b5527e7%3A0x1c3238d4adc0a7fc!2sJiron%20Puno%20241%2C%20Carabayllo%2015321!5e0!3m2!1ses!2spe!4v1661792881930!5m2!1ses!2spe" width="330" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="logo-footer">
-                <img src="components/img/logo-white.png" width="50">
-                <h1>
-                    H<span class="ans">&</span>F
-                </h1>
-            </div>
-            <div class="social-re">
-                <a href="https://www.facebook.com" target="__blank" class="home__social-link">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-                <a href="https://www.instagram.com" target="__blank" class="home__social-link">
-                    <i class="ri-instagram-line"></i>
-                </a>
-                <a href="https://www.twitter.com" target="__blank" class="home__social-link">
-                    <i class="ri-twitter-line"></i>
-                </a>
-                <a href="https://www.twitter.com" target="__blank" class="home__social-link">
-                    <i class="ri-linkedin-fill"></i>
-                </a>
-            </div>
-            <hr width="100%">
-            <div>
-            <h2>© 2022 HyF consulting | Todos los derechos reservados</h2>
-        </div>
-
-
-        </div>
-
-
-    </footer>
-
-    <!---BOTONES WSSP AY SCROLL UP-->
-
-    <div class="progress-bar">
-        <button class="back-to-top hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-            </svg>
-        </button>
-    </div>
-
-
-
-    <script src="components/main.js"></script>
-    <script src="components/slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-    <script>
-
-        $('.custom-slider').slick({
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 500,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 2
+            $('.custom-slider').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 500,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 1
+                        }
                     }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '10px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
+                ]
+            });
 
 
-        $(".custom-title-slider").slick({
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 3000,
-        });
+            $(".custom-title-slider").slick({
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
 
-    </script>
+        </script>
     </div>
 </body>
 

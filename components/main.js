@@ -2,7 +2,19 @@
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close"),
-  sectioncl = document.getElementById("main");
+  sectioncl = document.getElementById("main"),
+  sectionc2 = document.getElementById("skills"),
+  sectionc3 = document.getElementById("services"),
+  sectionc4 = document.getElementById("about"),
+  sectionc5 = document.getElementById("clientes"),
+  sectionc6 = document.getElementById("contact"),
+  sectionc7 = document.getElementById("footer");
+
+
+
+
+  // mobile = document.getElementById("mobile-d");
+
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -17,13 +29,50 @@ if (navClose) {
   }
 
 
-
 if (sectioncl) {
   
   sectioncl.addEventListener("click",()=>{
     navMenu.classList.remove("show-menu");
   })
 }
+if (sectionc2) {
+  
+  sectionc2.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+if (sectionc3) {
+  
+  sectionc3.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+if (sectionc4) {
+  
+  sectionc4.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+if (sectionc5) {
+  
+  sectionc5.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+if (sectionc6) {
+  
+  sectionc6.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+
+if (sectionc7) {
+  
+  sectionc7.addEventListener("click",()=>{
+    navMenu.classList.remove("show-menu");
+  })
+}
+
 
 
 
