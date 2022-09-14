@@ -521,12 +521,14 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    
    
 }
 
 .box-img img {
 
     transition: .4s;
+ 
 }
 
 .div-skills img:hover {
