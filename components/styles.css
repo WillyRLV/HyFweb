@@ -501,7 +501,7 @@ background-size: cover;
 .skills {
     
     text-align: center;
-    min-height: 70vh;
+    min-height: 30vh;
     
     
     
@@ -521,6 +521,7 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     gap: 5px;
+
     
    
 }
@@ -531,13 +532,15 @@ background-size: cover;
  
 }
 
-.div-skills img:hover {
-    transform: scale(1.1);
-}
 
 .box-img {
+    border: solid 2px rgb(139, 148, 147);
+    border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -600,35 +603,91 @@ background-size: cover;
 .content-card {
     display: grid;
     margin-top: 40px;
-    gap: 5px;
+    gap: 15px;
+}
+
+
+.flip{
+    width: 250px;
+    height: 300px;
+}
+
+.flip:hover > .card{
+    cursor:pointer;
+    transform: rotateY(180deg);
 }
 
 .card {
 
     position: relative;
-    width: 250px;
-    height: 300px;
-    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+    cursor:pointer;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+
+}
+
+/*card hover effect*/
+
+.front, 
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     border-radius: 10px;
-    border: 2px solid var(--first-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
     box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 7px 25px -14px rgba(0, 0, 0, 0.75);
+    backface-visibility: hidden ;
+    
 }
 
-.card img {
+.front{
+  height: 100%;
+    border: 2px solid var(--first-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+   
+}
+
+.back{
+    background-color: var(--first-color);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 11px;
+    
+}
+.back h1{
+    padding: 0 20px 0 20px;
+    color: rgb(255, 255, 255);
+}
+
+.back p {
+    padding: 0 20px 0 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--cat-color);
+}
+
+
+/*==================================*/
+
+.front img {
     width: 80px;
     filter: invert(56%) sepia(27%) saturate(5985%) hue-rotate(139deg) brightness(99%) contrast(101%);
     ;
 
 }
 
-.card::before {
+.front::before {
     position: absolute;
     content: '';
     width: 30px;
@@ -642,69 +701,60 @@ background-size: cover;
 /*estilo boton secundario*/
 
 .btn-card {
-    border: 2px solid var(--sec-color);
+    background-color: var(--sec-color);
     display: flex;
     justify-content: center;
     margin-top: 15px;
     border-radius: var(--br-3);
+    transition: .3s;
 }
 
 .btn-card:hover {
-    background-color: var(--sec-color);
+    transform: scale(1.03);
 }
 
 
 .btn-card:hover a {
-    color: var(--white-color);
+    color: var(--cat-color);
 }
 
 .size2 {
     width: 85px;
-    height: 23px;
+    height: 22px;
     padding-top: 2px;
     text-align: center;
 
 }
 
 .btn-card a {
-    color: #727272;
-    font-size: .8em;
+    color: #ffffff;
+    font-size: 1.3em;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /*============================================*/
 
 
 .text-gp {
-    text-align: left;
+    text-align: center;
     padding-right: 30px;
     padding-left: 30px;
-
 }
 
 .title-card {
-    margin-bottom: 6px;
     font-size: 1.2em;
     font-weight: bold;
     color: #004842;
     font-weight: 400;
-    text-align: center;
 }
-
-.parr-serv {
-    font-size: .9em;
-    color: #5e716f;
-}
-
 
 /*========================================================*/
 
 
 /*ABOUT SECTION===========================================*/
 .about {
-    min-height: 330vh;
-  
-    
+    min-height: 330vh;  
 }
 
 .div-about {
@@ -742,7 +792,7 @@ background-size: cover;
 .mis_vis-sec {
     position: relative;
     margin: auto;
-    min-height: 110vh;
+    min-height: 40vh;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -882,7 +932,7 @@ background-size: cover;
 /*=====================staff=================*/
 
 .staff {
-    height: 2000px;
+    height: 2050px;
 }
 
 
@@ -983,6 +1033,7 @@ margin: auto;
 .clients {
     position: relative;
     height: 170px;
+  
 }
 
 .title-clients h1 {
@@ -1026,6 +1077,7 @@ margin: auto;
 
 .contact {
     min-height: 95vh;
+
 }
 
 .content-contact {
@@ -1462,26 +1514,16 @@ margin: auto;
 .services{
     min-height: 110vh ;
 }
-
-
 .content-card{
     grid-template-columns: auto auto auto;
     gap: 60px;
   
 }
 
-.content-card .card{
-    cursor: pointer;
-    transition: .3s;
-}
-.content-card .card:hover{
-    transform: translateY(-20px);
-}
-
 /*nosotros*/
 
 .about{
-    min-height: 260vh !important;
+    min-height: 90vh ;
     
 }
 
@@ -1489,7 +1531,7 @@ margin: auto;
     position: relative;
     width: 950px;
     margin: auto;
-    min-height: 80vh;
+    min-height: 40vh;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -1533,7 +1575,7 @@ margin: auto;
 /*staff*/
 
 .staff{
-    height: 110vh;
+    height: 100vh;
 }
 
 .box{
@@ -1562,4 +1604,10 @@ margin: auto;
 
 }
 
+
+@media screen and  (max-width: 760px){
+    .box-img p {
+        transform: translateX(0);
+    }
+}
 
