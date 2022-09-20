@@ -564,7 +564,7 @@ a {
 
 /*====================SERVICIOS============================*/
 .services {
-    min-height: 140vh;
+    min-height: 160vh;
 }
 
 
@@ -695,7 +695,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     padding:10px 0 10px 0;
 }
 
@@ -711,9 +711,9 @@ a {
 
 .cardneg {
     border-radius: 5px;
-    background-color: azure;
+    background-color: var(--white-color);
     width: 260px;
-    height: 350px;
+    height: 380px;
     transition: .3s;
     display: flex;
     flex-direction: column;
@@ -729,7 +729,19 @@ a {
 .cardneg h1 {
     font-size: 1em;
     font-weight: bold;
+    color: var(--first-color);
+    text-align: center;
 
+}
+
+.cardneg svg {
+    height: 100px;
+}
+
+.cardneg ul {
+  
+    height: 60px;
+    
 }
 
 .cardneg ul li {
@@ -1170,7 +1182,6 @@ a {
 
 .contact {
     min-height: 95vh;
-    background-color: rgb(107, 102, 102);
 }
 
 .content-contact {
@@ -1612,7 +1623,6 @@ a {
     /*servicios*/
     .services {
         min-height: 60vh !important;
-        background-color: red;
     }
 
     .content-card {
@@ -1631,9 +1641,7 @@ a {
     /*nosotros*/
 
     .about {
-        background-color: #004842;
         min-height: 90vh;
-
     }
 
 
