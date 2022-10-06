@@ -3,10 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROCESOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <title>PROCESAMIENTO DE DATOS</title>
 </head>
 <body>
-    <h1>Hola2</h1>
+
+    <div class="container">
+
+        <div class="content">
+          
+    <h1>PROCESAMIENTO DE DATOS EN TIEMPO REAL</h1>
+    
+
+    <div class="parrafo">
+    <h4 class="back"><a  href="#"  onclick="closeMe()" style="text-decoration: none ; color:#BFAF00;;">Servicios </a><span style="color: #5f7061;;">/</span><span style="color:#479da3;"> PROCESAMIENTO DE DATOS</span></h4> 
+    <br>
+    <p>Recopilamos y manipulamos datos para producir información significativa. Para de esta manera, poder transformarlos en información entendible como gráficas, tablas y documentos.|</p>
+</div>
+    <h1 class="img-title-rec">PROCESAMIENTO DE DATOS </h1>
+    <!-- <img src="../img/picservices/METODOS RECOLECION.png" alt="" width="300"> -->
+    <img src="../img/picservices/PROCESAMIENTO.png" alt="" width="290">
+
+
+</div>
+</div>
+
+
+    
+<script>
+    function closeMe()
+    {
+        window.opener = self;
+        window.close();
+    }
+    </script>
+
 </body>
+<style>
+    /*FUENTES DE GOOGLE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        font-family: 'Lato', sans-serif;
+        background: url(../img/wallpaper-tecnologia.jpg);
+        
+    }
+
+.container{
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    /* bbackground-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+-webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+-moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+
+
+}
+
+
+.container h1:nth-child(1){
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00BFAF;
+    padding: 0 30px 0 30px;
+
+    
+    
+}
+
+
+
+.content{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.back{
+    font-size: .4em;
+    padding: 0 30px 0 30px;
+    text-transform: uppercase;
+}
+
+
+.content p {
+    font-size: .6em;
+    font-weight: 300;
+    padding: 0 30px 0 30px;
+    text-align: justify; 
+    
+}
+
+
+.img-title-rec{
+    font-size: .9em !important;
+    color:  #365b6d !important;
+    padding: 0 30px 0 30px;
+    text-align: center;
+  
+}
+
+/* @media screen and ( max-width: 476px ){
+    .container{
+        height: 130vh;
+    }
+    
+} */
+
+@media screen and ( min-width: 760px ){
+    .container{
+       width: 50%;
+       margin: auto ;
+    }
+
+    .parrafo{
+        padding: 0 80px 0 80px;
+    }
+
+
+
+    .container img{
+        width: 500px !important;
+    }
+    
+}
+
+
+
+</style>
 </html>

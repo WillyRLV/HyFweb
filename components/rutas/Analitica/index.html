@@ -3,10 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANALITICAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <title>ANALÍTICA AVANZADA</title>
 </head>
 <body>
-    <h1>Hola3</h1>
+
+    <div class="container">
+
+        <div class="content">
+          
+    <h1 class="title">ANALÍTICA AVANZADA</h1>
+    <div class="back">
+    <h4 ><a  href="#"  onclick="closeMe()" style="text-decoration: none ; color:#BFAF00;;">Servicios </a><span style="color: #5f7061;;">/</span><span style="color:#479da3;"> Analítica avanzada</span></h4> 
+</div>
+    <div class="bloque1 bloque">
+        <div class="box-text">
+        <h1>Análisis de sentimientos</h1><br>
+        <p>
+            Es una técnica para extraer información significativa de los clientes relacionada con sus actitudes, emociones y opiniones.
+        </p>
+    </div>
+        <img src="../img/picservices/analisissentimiento.png" width="100px" alt="">
+    </div>
+    <div class="bloque2 bloque">
+        <div class="box-text">
+        <h1>Analítica de texto</h1><br>
+        <p>
+            La analítica de texto se utiliza para obtener información más profunda, como identificar un patrón o tendencia a partir de un texto.
+        </p>
+        </div>
+        <img src="../img/picservices/analisistexto.png" width="100px" alt="">
+    </div>
+    <div class="bloque3 bloque">
+        <div class="box-text">
+        <h1>Análisis predictivo</h1><br>
+        <p>Es una forma de análisis estadístico que se encarga de obtener información nueva o histórica y utilizarla para predecir patrones de comportamiento.</p>
+        </div>
+        <img src="../img/picservices/analisis predicitivo.png" width="100px" alt="">
+    </div>
+
+    <div class="bloque4 bloque">
+        <div class="box-text">
+        <h1>Clusterización</h1><br>
+        <p>La clusterización ayuda para comprender algo complejo como el comportamiento de un cliente. Que es medible y te será de gran ayuda al momento de elaborar tu estrategia.</p>
+        </div>
+        <img src="../img/picservices/clusterizacion.png" width="100px" alt="">
+    </div>
+    
+</div>
+</div>
+
+
+    
+<script>
+    function closeMe()
+    {
+        window.opener = self;
+        window.close();
+    }
+    </script>
+
 </body>
+<style>
+    /*FUENTES DE GOOGLE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        font-family: 'Lato', sans-serif;
+        background: url(../img/wallpaper-tecnologia.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+.container{
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    /* bbackground-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+    width: 100vw;
+    height: 175vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+-webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+-moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.81);
+
+
+}
+
+
+.title{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #00BFAF;
+    padding: 0 30px 0 30px;
+    margin-bottom: 30px;
+}
+
+.back{
+    padding: 0 30px 0 30px;
+}
+
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 40px 0 40px;
+    text-align: center;
+    
+}
+
+.bloque h1 {
+    font-size: 1.5em;
+    color:#365b6d ;
+}
+.bloque p {
+    font-weight: 700;
+    color:#589aaa ;
+}
+.box-text{
+    margin-bottom: 30px;
+}
+
+
+/* @media screen and ( max-width: 476px ){
+    .container{
+        height: 130vh;
+    }
+    
+} */
+
+@media screen and ( min-width: 760px ){
+    .container{
+       width: 50%;
+       height: 120vh;
+       margin: auto ;
+    }
+img{
+    width: 190px;
+}
+
+.title{
+    font-size: 2em;
+}
+    .box-text{
+    line-height: 24px;
+    width: 320px;
+
+    
+    }
+
+    .bloque{
+        gap: 30px;
+    }
+
+    .bloque1{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .bloque2{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .bloque3{
+        flex-direction: row;
+        text-align: left;
+    }
+    .bloque4{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    
+}
+
+
+
+</style>
 </html>
